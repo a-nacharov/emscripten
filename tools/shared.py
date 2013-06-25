@@ -1214,7 +1214,7 @@ set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE ONLY)''' % { 'winfix': '' if not WINDOWS e
     return opts
 
   @staticmethod
-  def js_optimizer(filename, passes, jcache):
+  def js_optimizer(filename, passes, jcache=False):
     return js_optimizer.run(filename, passes, listify(NODE_JS), jcache)
 
   @staticmethod
